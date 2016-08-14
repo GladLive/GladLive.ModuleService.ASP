@@ -11,6 +11,7 @@ using GladLive.Module.System.Server;
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.AspNetCore.Server.Kestrel.Https;
+using System.Reflection;
 
 namespace GladLive.ModuleService.ASP
 {
@@ -23,7 +24,9 @@ namespace GladLive.ModuleService.ASP
 		}
 
 		//This changed in RTM. Fluently build and setup the web hosting
-		public static void Main(string[] args) => new WebHostBuilder()
+		public static void Main(string[] args)
+		{
+			new WebHostBuilder()
 			.UseKestrel(options =>
 			{
 				X509Certificate2 cert = new X509Certificate2(@"Certs/TLSCert.pfx");
@@ -36,5 +39,6 @@ namespace GladLive.ModuleService.ASP
 			.UseStartup<Startup>()
 			.Build()
 			.Run();
+		}
 	}
 }
