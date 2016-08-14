@@ -12,6 +12,8 @@ using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.AspNetCore.Server.Kestrel.Https;
 using System.Reflection;
+using GladNet.Serializer;
+using GladNet.Serializer.Protobuf;
 
 namespace GladLive.ModuleService.ASP
 {
@@ -21,6 +23,19 @@ namespace GladLive.ModuleService.ASP
 			: base(env)
 		{
 			//just pass to base
+		}
+
+		public override void ConfigureServices(IServiceCollection services)
+		{
+			//Configure GladNet
+			//Hacky but we need it
+			services.AddSingleton<ISerializerStrategy, ProtobufnetSerializerStrategy>();
+			services.AddSingleton<IDeserializerStrategy, ProtobufnetDeserializerStrategy>();
+			services.AddSingleton<ISerializerRegistry, ProtobufnetRegistry>();
+
+			services.AddGladNet(new ProtobufnetSerializerStrategy(), new ProtobufnetDeserializerStrategy(), new ProtobufnetRegistry());
+
+			base.ConfigureServices(services);
 		}
 
 		//This changed in RTM. Fluently build and setup the web hosting

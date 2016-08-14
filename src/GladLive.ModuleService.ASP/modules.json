@@ -1,6 +1,6 @@
 ﻿{
 	"ModuleSystemOptions": {
 		"ApplicationConfigurationModulesPaths": [],
-		"ServiceRegistrationModulesPaths": [ ]
+					"ServiceRegistrationModulesPaths": [ "GladLive.Lobby.PeerToPeer.Module"]
 	}
 }
