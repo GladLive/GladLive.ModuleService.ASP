@@ -1,6 +1,6 @@
 ﻿{
-	"DatabaseConfigOptions": {
-		"useInMemoryDatabase": true,
-		"DatabaseConnectionString": ""
-	}
+  "DatabaseConfigOptions": {
+    "useInMemoryDatabase": false,
+    "DatabaseConnectionString": "Server=localhost;Database=boomaauth;Uid=root;Pwd=test;"
+  }
 }

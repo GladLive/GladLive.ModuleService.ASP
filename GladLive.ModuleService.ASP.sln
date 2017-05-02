@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A679CB16-0C2B-4124-B435-F7308E8068DB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B1A7CD74-90A3-4FB4-87CA-2F24D6725CDD}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "GladLive.ModuleService.ASP", "src\GladLive.ModuleService.ASP\GladLive.ModuleService.ASP.xproj", "{95F31123-9387-4003-A464-3881D5E1940A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GladLive.ModuleService.ASP", "src\GladLive.ModuleService.ASP\GladLive.ModuleService.ASP.csproj", "{95F31123-9387-4003-A464-3881D5E1940A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
