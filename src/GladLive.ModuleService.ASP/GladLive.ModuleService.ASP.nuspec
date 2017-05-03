@@ -23,6 +23,8 @@
   <files>
     <file src="module.json" target="" />
     <file src="database.json" target="" />
-    <file src=".\bin\Release\net451\GladLive.ModuleService.ASP.exe.config" target="lib\net451" />
   </files>
+  <contentFiles>
+    <files include="bin/release/net451/GladLive.ModuleService.ASP.exe.config" buildAction="None" copyToOutput="true" flatten="false" />
+  </contentFiles>
 </package>
