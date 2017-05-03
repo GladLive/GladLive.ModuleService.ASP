@@ -11,6 +11,14 @@
     <description>Deployable GladLive module ASP service..</description>
     <copyright>Copyright 2015-2016</copyright>
     <tags>GladLive GladLive.Module GladLive.ModuleService GladLive.ModuleService.ASP</tags>
+    <dependencies>
+       <dependency id="GladLive.Module.System.Server" version="1.0.19" />
+       <dependency id="GladNet.ASP.Server" version="1.0.19" />
+       <dependency id="GladNet.Serializer.Protobuf" version="1.0.12" />
+       <dependency id="Microsoft.AspNetCore.Hosting" version="1.1.1" />
+       <dependency id="Microsoft.AspNetCore.Server.Kestrel" version="1.1.1" />
+       <dependency id="Microsoft.AspNetCore.Server.Kestrel.Https" version="1.1.1" />
+    </dependencies>
   </metadata>
   <files>
     <file src="module.json" target="" />
