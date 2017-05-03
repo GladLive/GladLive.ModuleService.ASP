@@ -1,1 +1,1 @@
-msbuild GladLive.ModuleService.ASP.sln configuration=RELEASE
+msbuild GladLive.ModuleService.ASP.sln /P:Config=Release
