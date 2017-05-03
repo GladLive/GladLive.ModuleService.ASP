@@ -23,6 +23,6 @@
   <files>
     <file src="module.json" target="" />
     <file src="database.json" target="" />
-    <file src="GladLive.ModuleService.ASP.exe.config" target="" />
+    <file src=".\bin\Release\GladLive.ModuleService.ASP.exe.config" target="" />
   </files>
 </package>
