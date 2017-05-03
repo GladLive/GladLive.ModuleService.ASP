@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>GladLive.ModuleService.ASP</id>
+    <version>$version$</version>
+    <title>GladLive.ModuleService.ASP</title>
+    <authors>www.github.com/HelloKitty</authors>
+    <owners>www.github.com/HelloKitty</owners>
+    <licenseUrl>https://github.com/GladLive/GladLive.ModuleService.ASP/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/GladLive/GladLive.ModuleService.ASP/</projectUrl>
+    <description>Deployable GladLive module ASP service..</description>
+    <copyright>Copyright 2015-2016</copyright>
+    <tags>GladLive GladLive.Module GladLive.ModuleService GladLive.ModuleService.ASP</tags>
+  </metadata>
+  <files>
+    <file src="module.json" target="" />
+    <file src="database.json" target="" />
+  </files>
+</package>
