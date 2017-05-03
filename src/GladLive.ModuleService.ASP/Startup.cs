@@ -41,6 +41,7 @@ namespace GladLive.ModuleService.ASP
 		//This changed in RTM. Fluently build and setup the web hosting
 		public static void Main(string[] args)
 		{
+			//Check the first argument; it is likely the URL if asked for
 			new WebHostBuilder()
 			.UseKestrel(options =>
 			{
@@ -49,7 +50,7 @@ namespace GladLive.ModuleService.ASP
 				//TODO: Handle cert changes
 				options.UseHttps(new HttpsConnectionFilterOptions() { SslProtocols = System.Security.Authentication.SslProtocols.Tls | System.Security.Authentication.SslProtocols.Tls11 | System.Security.Authentication.SslProtocols.Tls12, ServerCertificate = cert });
 			})
-			.UseUrls(@"https://localhost:44300")
+			.UseUrls(args.Any() ? args.First() : @"https://localhost:44300")
 			.UseContentRoot(Directory.GetCurrentDirectory())
 			.UseStartup<Startup>()
 			.Build()
