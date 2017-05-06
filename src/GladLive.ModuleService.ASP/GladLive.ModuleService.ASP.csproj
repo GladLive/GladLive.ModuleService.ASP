@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="GladNet.ASP.Formatters" Version="1.0.25" />
     <PackageReference Include="GladNet.ASP.Server" Version="1.0.25" />
     <PackageReference Include="GladNet.Serializer.Protobuf" Version="1.0.12" />
     <PackageReference Include="GladLive.Module.System.Server" Version="1.0.19" />
