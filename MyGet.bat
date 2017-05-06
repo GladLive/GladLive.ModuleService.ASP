@@ -1,1 +1,1 @@
-msbuild GladLive.ModuleService.ASP.sln /P:Config=Release
+dotnet pack src/GladLive.ModuleService.ASP/ -c Release
